@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 300px;
+    text-align: center;
+}
+
+#answers {
+    display: flex;
+    flex-direction: column;
+}
+
+#answers .answer {
+    margin-bottom: 5px;
+}
+
+.next {
+    margin-top: 40px;
+    width: 60%;
+    align-self: center;
+    display: none;
+}
+
+.good {
+    background-color: green;
+}
+
+.bad {
+    background-color: red;
+}
+
+#new-word {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.addword-error {
+    border: 1px red solid !important;
+}

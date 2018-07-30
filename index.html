@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Language quiz</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="container">
+        <div class="score">
+            <p>Dobrze: <span class="good-count">0</span></p>
+            <p>Źle: <span class="bad-count">0</span></p>
+        </div>
+		<div class="word">
+            <h2 id="question"></h2>
+        </div>
+        <div id="answers">
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+            <button class="answer"></button>
+        </div>
+        <button class="next">Następny</button>
+	</div>
+    <div id="new-word">
+        <form id="new">
+            <p>Dodaj nowe angielskie słowo:</p><input class="en" type="text" name="newEN">
+            <p>Dodaj tłumaczenie:</p><input class="pl" type="text" name="newPL">
+            <input class="send" type="submit" value="Wyślij">
+        </form>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
