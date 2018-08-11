@@ -54,8 +54,8 @@
 
 		let firstCheckAnswer = true;
 		function checkAnswer(e){
-			if(e.srcElement.childNodes[0].textContent === base[randomKey]){
-				e.srcElement.classList.add('good');
+			if(e.target.childNodes[0].textContent === base[randomKey]){
+				e.target.classList.add('good');
 				next.style.display = 'block';
 				for(let j = 0; j < answerButtons.length; j++){
 					answerButtons[j].removeEventListener('click', checkAnswer);
@@ -66,7 +66,7 @@
 					firstCheckAnswer = false;
 				}
 			} else {
-				e.srcElement.classList.add('bad');
+				e.target.classList.add('bad');
 				if(firstCheckAnswer){
 					badCount.textContent = (++bad);
 					firstCheckAnswer = false;
